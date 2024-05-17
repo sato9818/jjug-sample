@@ -5,7 +5,7 @@ package sample;
 // ユーザーの情報を取得、追加、更新するためのサービス定義
 service UserService {
   // IDに基づいてユーザーの情報を取得
-  rpc GetCar(GetUserRequest) returns (GetUserResponse);
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
 }
 
 // ユーザーの情報を表すメッセージ
