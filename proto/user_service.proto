@@ -8,13 +8,6 @@ service UserService {
   rpc GetUser(GetUserRequest) returns (GetUserResponse);
 }
 
-// ユーザーの情報を表すメッセージ
-message User {
-  int32 id = 1;             // ユーザーの一意のID
-  string name = 2;          // ユーザーの名前
-  string email = 3;         // ユーザーのメールアドレス
-}
-
 // ユーザー情報を取得するリクエスト
 message GetUserRequest {
   int32 id = 1;             // 取得したいユーザーのID
@@ -22,5 +15,7 @@ message GetUserRequest {
 
 // 取得したユーザーの情報
 message GetUserResponse {
-  User user = 1;             // 取得したユーザーの情報
+  int32 id = 1;             // ユーザーの一意のID
+  string name = 2;          // ユーザーの名前
+  string email = 3;         // ユーザーのメールアドレス
 }
