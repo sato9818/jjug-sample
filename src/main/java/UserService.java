@@ -12,13 +12,11 @@ public class UserService extends UserServiceGrpc.UserServiceImplBase {
             responseObserver.onError(new StatusRuntimeException(Status.UNIMPLEMENTED));
             return;
         }
-        
         final GetUserResponse res = GetUserResponse.newBuilder()
                                                    .setEmail("test@exmaple.com")
                                                    .setName("Koki Sato")
                                                    .setId(request.getId())
                                                    .build();
-
         responseObserver.onNext(res);
         responseObserver.onCompleted();
     }

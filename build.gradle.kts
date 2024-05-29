@@ -22,6 +22,12 @@ dependencies {
     implementation("io.grpc:grpc-services")
     implementation("io.grpc:grpc-stub")
     compileOnly("org.apache.tomcat:annotations-api:6.0.53")
+
+    // Armeria
+    implementation(platform("com.linecorp.armeria:armeria-bom:1.28.4"))
+    implementation("com.linecorp.armeria:armeria")
+    implementation("com.linecorp.armeria:armeria-grpc")
+    implementation("com.linecorp.armeria:armeria-spring-boot3-starter")
 }
 
 sourceSets {
