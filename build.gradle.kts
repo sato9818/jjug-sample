@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("build.buf") version "0.9.0"
 }
 
 repositories {
@@ -7,8 +8,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation(platform("com.google.protobuf:protobuf-bom:3.25.1"))
+    implementation("com.google.protobuf:protobuf-java")
 }
 
 tasks.test {
