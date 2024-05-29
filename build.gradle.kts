@@ -2,9 +2,6 @@ plugins {
     id("java")
 }
 
-group = "com.demaecan.demae.settlementservice"
-version = "1.0-SNAPSHOT"
-
 repositories {
     mavenCentral()
 }
