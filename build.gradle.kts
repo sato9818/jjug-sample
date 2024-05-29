@@ -4,6 +4,7 @@ import build.buf.gradle.GENERATED_DIR
 plugins {
     id("java")
     id("build.buf") version "0.9.0"
+    id("org.springframework.boot") version "3.2.2"
 }
 
 repositories {

@@ -7,7 +7,7 @@ import sample.UserServiceOuterClass.GetUserRequest;
 import sample.UserServiceOuterClass.GetUserResponse;
 
 public final class SampleClient {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         final ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 6565)
                                                             .usePlaintext()
                                                             .build();

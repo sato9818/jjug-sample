@@ -17,6 +17,7 @@ public class UserService extends UserServiceGrpc.UserServiceImplBase {
                                                    .setName("Koki Sato")
                                                    .setId(request.getId())
                                                    .build();
+
         responseObserver.onNext(res);
         responseObserver.onCompleted();
     }

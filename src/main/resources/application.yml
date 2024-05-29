@@ -1,0 +1,8 @@
+armeria:
+  ports:
+    - port: 6565
+      protocols:
+        - http
+  internal-services:
+    include: docs
+    port: 8090
