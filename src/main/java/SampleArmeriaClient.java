@@ -15,6 +15,7 @@ public class SampleArmeriaClient {
                                              .failureResponseLogLevel(LogLevel.ERROR)
                                              .build();
 
+        // Retryの設定やCircuit Breakerの設定も簡単にできる。
         final UserServiceBlockingStub userService = GrpcClients.builder("http://127.0.0.1:6565/")
 //                                                               .decorator(LoggingClient.builder()
 //                                                                                       .logWriter(logWriter)
